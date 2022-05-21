@@ -21,6 +21,10 @@ public class BrowserUtils {
         Select select = new Select(element);
         select.selectByValue(value);
     }
+    public static void selectDropdownByText(WebElement element, String value){
+        Select select = new Select(element);
+        select.selectByVisibleText(value);
+    }
 
     /**
      * Method will scroll up or down by the number of pixels
